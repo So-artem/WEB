@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<style type="text/css">
+		table
+		{
+			font-size:24px; 
+			font-family: consolas;
+		}
+		.th1:hover, .th2:hover, .th3:hover
+		{
+			background: #9F3ED5;
+		}
+		.th1:active, .th2:active, .th3:active
+		{
+			background: #48036F;
+		}
+		.td1:hover
+		{
+			background: #FF7373;
+		}
+		.td1:active
+		{
+			background: #A60000;
+		}
+
+		.td2:hover
+		{
+			background:#C9F76F;
+			transition: 1s;
+		}
+		.td2:active
+		{
+			background:#679B00;
+			transition: 1.5s;
+		}
+	</style>
+</head>
+<body>
+	<table border="5" cellpadding="5" cellspacing="0" style="width:100%; font-family: consolas">
+		<tr>
+			<th class="th1" rowspan="2">Заголовок 1
+			<th class="th2">Заголовок 2
+			<th class="th3" rowspan="2">Заголовок 3
+		</tr>
+		<tr>
+			<td class="td1">Текст
+		</tr>
+		<tr>
+			<td class="td2" colspan="3">Довільні дані
+		</tr>
+	</table>
+</body>
+</html>
