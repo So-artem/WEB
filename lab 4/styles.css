@@ -1,0 +1,155 @@
+body
+{
+	background: url("img/bg.jpg");
+	background-color: #342D3D;
+	font-family: Calluna;
+}
+h1
+{
+    text-align: center;
+    color:rgb(247, 233, 217);
+}
+nav
+{
+	margin: 13% 8ex 4% -0.3ex;
+	font-size: 1.2vw;
+	position: fixed;
+}
+nav ul
+{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+nav ul li
+{
+	padding:3ex;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	margin-bottom:4ex;
+	background: #294A5A;
+}
+
+nav ul li:hover
+{
+    transition: 0.7s;
+    background: rgb(177, 204, 218);
+    
+}
+nav ul li a:hover
+{
+    transition: 0.7s;
+    color:#3485AC;
+}
+nav ul li a
+{
+	text-decoration: none;
+	color:rgb(226, 241, 247);
+	font-weight: bold;
+}
+
+nav ul li.active a
+{
+	color: #3485AC;
+}
+
+nav ul li.active
+{
+	background:rgb(186, 218, 233)	;
+}
+#info
+{
+    padding: 1% 1% 1% 1%;
+	margin-left:3ex;
+	background:rgba(159, 226, 255, 0.644);
+	margin: 1% 21% 18% 16%;
+	border-radius: 9px;
+    color: rgb(75, 74, 74);
+    
+}
+#block-right
+{
+	width: 18%;
+	float: right;
+    margin-top:19%;
+    
+    background: rgba(184, 238, 234, 0.24);
+    font-size:1.4vw;
+	border-radius: 3px;
+	padding: 1ex;
+	margin-top:1ex;
+	transition: 0.3s;
+}
+
+#right
+{
+	background: rgba(142, 218, 224, 0.747);
+    font-size:1.4vw;
+	border-radius: 3px;
+	color: rgb(75, 74, 74);
+	padding: 1ex;
+	margin-top:1ex;
+	transition: 0.3s;
+}
+
+/* #right:hover
+{
+	margin-left:-7%;
+	transition: 0.3s;
+	box-shadow: gray 0px 0px 10px 6px;
+} */
+
+footer
+{
+	color:rgb(245, 201, 106);
+	font-size:12;
+	text-align: center;
+}
+footer a
+{
+	color: rgb(245, 201, 106);
+}
+footer a:visited
+{
+	color: rgb(250, 183, 0);
+}
+hr
+{
+    background: rgb(255, 228, 170);
+	height: 2px;
+}
+
+
+/* header {
+    background:#dbdbdb;
+    border-bottom:3px solid #777777;
+    margin:0 0 30px; 
+    text-align: center;
+}
+header h1{
+    font-size: 36px;
+}
+#main {
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+nav { 
+    box-sizing: border-box;
+    float: left;
+    padding:20px;
+    width:20%;
+}
+#content {
+    float: left;
+    width:80%;
+}
+footer {
+    clear: both;
+    margin: 30px 0 0;
+    padding:15px;
+}
+footer p{
+    font-size:12px;
+    text-align: center;
+    } */
