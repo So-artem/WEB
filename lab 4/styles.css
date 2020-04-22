@@ -1,13 +1,13 @@
 body
 {
-	background: url("img/bg.jpg");
+	background: url("img/bg1.png");
 	background-color: #342D3D;
 	font-family: Calluna;
 }
 h1
 {
-    text-align: center;
-    color:rgb(247, 233, 217);
+	text-align: center;
+	color:#F6C39C;
 }
 nav
 {
@@ -32,49 +32,50 @@ nav ul li
 
 nav ul li:hover
 {
-    transition: 0.7s;
-    background: rgb(177, 204, 218);
-    
+	transition: 0.7s;
+	background: rgba(159, 226, 255, 0.644);
+	
 }
 nav ul li a:hover
 {
-    transition: 0.7s;
-    color:#3485AC;
+	transition: 0.7s;
+	color:rgb(8, 45, 92);
 }
 nav ul li a
 {
 	text-decoration: none;
 	color:rgb(226, 241, 247);
 	font-weight: bold;
+	font-size: 105%;
 }
 
 nav ul li.active a
 {
-	color: #3485AC;
+	color: rgb(8, 45, 92);
 }
 
 nav ul li.active
 {
-	background:rgb(186, 218, 233)	;
+	background:rgba(159, 226, 255, 0.850);
 }
 #info
 {
-    padding: 1% 1% 1% 1%;
+	padding: 1% 1% 1% 1%;
 	margin-left:3ex;
 	background:rgba(159, 226, 255, 0.644);
-	margin: 1% 21% 18% 16%;
+	margin: 1% 20% 18% 17.5%;
 	border-radius: 9px;
-    color: rgb(75, 74, 74);
-    
+	color: rgb(75, 74, 74);
+	
 }
 #block-right
 {
 	width: 18%;
 	float: right;
-    margin-top:19%;
-    
-    background: rgba(184, 238, 234, 0.24);
-    font-size:1.4vw;
+	margin-top:19%;
+	
+	background: rgba(184, 238, 234, 0.24);
+	font-size:1.4vw;
 	border-radius: 3px;
 	padding: 1ex;
 	margin-top:1ex;
@@ -83,8 +84,8 @@ nav ul li.active
 
 #right
 {
-	background: rgba(142, 218, 224, 0.747);
-    font-size:1.4vw;
+	background: rgba(159, 226, 255, 0.644);
+	font-size:1.4vw;
 	border-radius: 3px;
 	color: rgb(75, 74, 74);
 	padding: 1ex;
@@ -115,41 +116,6 @@ footer a:visited
 }
 hr
 {
-    background: rgb(255, 228, 170);
+	background: #F6C39C;
 	height: 2px;
 }
-
-
-/* header {
-    background:#dbdbdb;
-    border-bottom:3px solid #777777;
-    margin:0 0 30px; 
-    text-align: center;
-}
-header h1{
-    font-size: 36px;
-}
-#main {
-    margin:0px;
-    padding:0px;
-    width:100%;
-}
-nav { 
-    box-sizing: border-box;
-    float: left;
-    padding:20px;
-    width:20%;
-}
-#content {
-    float: left;
-    width:80%;
-}
-footer {
-    clear: both;
-    margin: 30px 0 0;
-    padding:15px;
-}
-footer p{
-    font-size:12px;
-    text-align: center;
-    } */
