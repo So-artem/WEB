@@ -1,0 +1,50 @@
+body
+{
+	font-family: consolas;
+	font-size: 13px;
+	line-height: 20px;
+	background: #536387;
+	color: lightgray;
+	padding-left:2ex;
+}
+
+h1,h2
+{
+	text-shadow: black 1px 2px 2px;
+}
+a[href]
+{
+	color:#8F813F;
+	text-decoration: none;
+}
+
+a[href]:hover
+{
+	color:#AB9E61;
+}
+
+a[href]:visited
+{
+	color:	#AB8261;
+}
+ input,textarea
+{
+	border: none;
+	padding:1.4ex;
+	background: #2F3A54;
+	color:lightgray;
+	border-radius: 5px;
+}
+button
+{
+	border: white 2px solid;
+	box-shadow: none;
+	background: #AB9C57;
+	color:#4D5C6B;
+}
+hr
+{
+	height: 3px;
+	background:#AB7D57;
+	border: none;
+}
