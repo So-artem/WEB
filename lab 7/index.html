@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Лабораторна робота № 7</title>
+	<meta http-equiv="content-type" content="text/HTML; charset=utf-8">
+	<meta name ="author" content="Sobko Artem">
+	<meta name ="keywords" content="Лабораторна робота № 7">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+<div>
+    <a id="last_name"> Прізвище: </a><br>
+    <a id="name"> Ім'я: </a><br>
+    <a id="surname"> По-батькові: </a><br>
+</div><br>
+<button onclick= info() id="inf">
+    Більше інформації
+</button>
+<div>
+    <a id="info"></a>
+</div><br>
+<div>
+    <a href = "function.html" ><img src="fun.PNG"> </a>
+</div>
+
+
+
+
+<script>
+document.getElementById("last_name").innerHTML += "Cобко";
+document.getElementById("name").innerHTML += "Артем";
+document.getElementById("surname").innerHTML += "Геннадійович";
+
+a = true;
+function info()
+{ 
+    if (a)
+    {
+    document.getElementById("info").innerHTML = "Народився 27.08.2000 у місті Хмельницький.";
+    document.getElementById("inf").innerHTML = "Менше інформації";
+    a = false;
+    }
+    else{
+        document.getElementById("info").innerHTML = "";
+        document.getElementById("inf").innerHTML = "Більше інформації";
+        a = true;
+    }   
+}
+
+</script>
+</body>
+</html> 
