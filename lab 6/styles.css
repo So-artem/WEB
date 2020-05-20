@@ -2,14 +2,14 @@
 {
 	body
 	{
-		background: url("img/bg1.png");
-		background-color: #342D3D;
+		/* background: url("img/bg1.png"); */
+		background: linear-gradient(to top, #126696, #b7b7c9);
 		font-family: Calluna;
 	}
 	h1
 	{
 		text-align: center;
-		color:#F6C39C;
+		color:rgb(0, 0, 0);
 	}
 	nav
 	{
@@ -121,6 +121,119 @@
 		background: #F6C39C;
 		height: 2px;
 	}
+
+
+
+	
+
+	.burger-menu_button{
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		z-index: 30;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #126696;
+		transition: 0.5s;
+	}
+
+	.burger-menu_button:hover .burger-menu_lines{
+		filter: brightness(-7);
+	}
+
+	.burger-menu_lines,
+	.burger-menu_lines::after,
+	.burger-menu_lines::before{
+		position: absolute;
+		width: 30px;
+		height: 4px;
+		background-color: #000;
+	}
+	.burger-menu_lines{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: 0.5s;
+	}
+
+	.burger-menu_lines::before{
+		content: "";
+		top: -10px;
+		transition: 0.5s;
+	}
+	
+	.burger-menu_lines::after{
+		content: "";
+		top: 10px;
+		transition: 0.5s;
+	}
+
+
+	.burger-menu_active .burger-menu_button,
+	.burger-menu_active .burger-menu_lines{
+		width: 0;
+		transition: 0.4s;
+	}
+	.burger-menu_active .burger-menu_lines::before{
+		top: 0;
+		transform: rotate(45deg);
+		transition: 0.5s;
+	}
+	.burger-menu_active .burger-menu_lines::after{
+		top: 0;
+		transform: rotate(-45deg);
+		transition: 0.5s;
+	}
+
+	.burger-menu_nav{
+
+		padding-top: 60px;
+		position: fixed;
+		top: 0;
+		margin: 0;
+		z-index: 20;
+		display: flex;
+		flex-flow: column;
+		height: 100%;
+		background-color: #2a2a2a;
+		overflow-y: auto;
+		left: -100%;
+		transition: 0.5s;
+	}
+	.burger-menu_active .burger-menu_nav{
+		left: 0;
+	}
+
+	.burger-menu_link{
+		padding: 30px;
+		font-family: sans-serif;
+		font-size: 18px;
+		text-decoration: none;
+		
+		letter-spacing: 2.5px;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	.burger-menu_link:hover{
+		filter: brightness(0.7);
+	}
+
+	.burger-menu_overlay{
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 10;
+	}
+
+	.burger-menu_active .burger-menu_overlay{
+		display: block;
+	}
+
 
 }
 

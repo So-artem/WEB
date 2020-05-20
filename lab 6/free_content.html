@@ -9,15 +9,23 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <nav>
-		<ul>
-			<li><a href = "index.html">Скорочена довідка</a>
-			<li><a href = "function.html">Призначення</a>
-		    <li><a href = "version.html">Існуючі версії ліцензій</a>
-		    <li class="active"><a href = "free_content.html">Вільний вміст </a>
-		</ul>
-    </nav>
-    
+    <div class="burger-menu">
+        <a href="#" class="burger-menu_button" >
+            <span class="burger-menu_lines"></span>
+        </a>
+        <nav class="burger-menu_nav">
+            <a href="index.html" class="burger-menu_link">Скорочена довідка</a>
+            <a href="function.html" class="burger-menu_link">Призначення</a>
+            <a href="version.html" class="burger-menu_link">Існуючі версії ліцензій</a>
+            <a href="free_content.html" class="burger-menu_link">Вільний вміст</a>
+        </nav>
+
+        <div class="burger-menu_overlay"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src = "burger-menu.js"></script>
     <header>
         <h1>Ліцензії Creative Commons та вільний вміст</h1>
     </header>
